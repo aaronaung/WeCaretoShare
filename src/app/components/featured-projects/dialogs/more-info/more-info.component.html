@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>Contact Info</h2>
+<mat-dialog-content>
+  <p>Organization Name: <b>{{data.project.organization.name}}</b></p>
+  <p>City: <b>{{data.project.contactCity || 'Not Provided'}}</b></p>
+  <p>State: <b>{{data.project.contactState || 'Not Provided'}}</b></p>
+  <p>Postal: <b>{{data.project.contactPostal || 'Not Provided'}}</b></p>
+  <p>Country: <b>{{data.project.contactCountry || 'Not Provided'}}</b></p>
+  <p>Address: <b>{{data.project.contactAddress || 'Not Provided'}}</b></p>
+  <p>Website: <a target='_blank' [href]='data.project.contactUrl || "#"'>{{data.project.contactUrl || 'Not Provided'}}</a></p>
+</mat-dialog-content>

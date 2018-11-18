@@ -1,0 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="background"></div>
+<div class='info'>
+    <i class='btn fas fa-info-circle fa-lg' (click)='openInfoDialog()'></i>
+</div>
+
+<main [@fadeAnimation]='getRouterState(o)'>
+    <router-outlet #o='outlet'></router-outlet>
+</main>
+

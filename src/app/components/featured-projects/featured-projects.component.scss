@@ -1,0 +1,50 @@
+:host {
+    
+    #featuredProjectsCarousel {
+        height: 80vh;
+        width: 80vw;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: 20px !important;
+    }
+
+    .fp-image {
+        height: 80vh;  
+        object-fit: cover;
+        border-radius: 20px !important;
+    }
+
+    .carousel-caption {
+        padding: 20px;
+        background: rgba(black, 0.4);
+        border-radius: 20px;
+        top: auto;
+        height: fit-content;
+        left: 10%;
+        right: 10%;
+        bottom: -25px;
+    }
+
+    .fp-summary {
+        height: fit-content;
+        overflow-y: auto;
+        text-align: left;
+    }
+
+    .fp-progress-bar {
+        cursor: pointer;
+        height: 25px;
+    }
+
+    .fp-btn {
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .fp-btn-container {
+        padding-bottom:25px
+    }
+}

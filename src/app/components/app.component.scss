@@ -1,0 +1,25 @@
+:host { 
+    #background {
+        background-image: url("../../assets/images/background.jpg");
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.9;
+        z-index: -10000; 
+    }
+
+    /deep/ router-outlet ~ * {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .info {
+        position: absolute;
+        z-index: 1;
+        color: rgba(white, 0.8);
+        top: 2%;
+        left: 96%;
+        font-size: 25px;
+    }
+}
