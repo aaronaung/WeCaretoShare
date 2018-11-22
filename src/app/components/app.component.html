@@ -1,7 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div id="background"></div>
-<div class='info'>
-    <i class='btn fas fa-info-circle fa-lg' (click)='openInfoDialog()'></i>
+<div class='icons'>
+    <i class='btn fas fa-info-circle fa-lg icon' matTooltip='Disclaimer' matTooltipPosition='left' (click)='openInfoDialog()'></i>
+    <a class='btn fas fa-home fa-lg icon' matTooltip='Home' matTooltipPosition='left' routerLink='/'></a>
+    <a class='btn fas fa-star fa-lg icon' matTooltip='Featured projects' matTooltipPosition='left' routerLink='/featured'></a>
+    <a class="btn fas fa-search fa-lg icon" matTooltip='Search projects' matTooltipPosition='left' routerLink='/search'></a>
 </div>
 
 <main [@fadeAnimation]='getRouterState(o)'>

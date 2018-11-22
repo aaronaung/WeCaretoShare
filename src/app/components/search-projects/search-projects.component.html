@@ -1,3 +1,25 @@
-<p>
-  search-projects works!
-</p>
+<div class="container" id='searchProjectsContainer'>
+    <h1 class='mb-3 sp-header'>Let's make a difference</h1>
+    <div class="row sp-row">
+        <div class="col-lg-4 col-md-4 col-sm-12 mb-2 sp-col">
+            <select name="spThemes" id="spThemes" [(ngModel)]='selectedTheme' class="form-control sp-themes">
+                <option disabled>Please select a theme</option>
+                <option value="">None</option>
+                <option *ngFor='let t of themes' [value]="t.id">{{t.name}}</option>
+            </select>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 mb-2 sp-col">
+            <select name="spCountries" id="spCountries" [(ngModel)]='selectedCountry' class="form-control sp-countries">
+                <option disabled>Please select a country</option>
+                <option value="">None</option>
+                <option *ngFor='let c of countries' [value]="c.code">{{c.name}}</option>
+            </select>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 mb-2 sp-col">
+            <button class="btn btn-md btn-success sp-btn" (click)='onSearch()'>Search</button>
+        </div>
+        <div class="col-lg-2 col-md-2 col sm-12 mb-2 sp-col">
+            <button class="btn btn-md btn-danger sp-btn" (click)='onClear()'>Clear</button>
+        </div>
+    </div>
+</div>

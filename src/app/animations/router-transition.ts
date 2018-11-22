@@ -26,7 +26,7 @@ export const fadeAnimation =
             query(':enter', // Queries entering DOM element
                 [
                     style({ opacity: 0 }),
-                    animate('0.2s', style({ opacity: 1 }))
+                    animate('0.2s 0.8s ease-in', style({ opacity: 1 }),)
                 ], 
                 { optional: true }
             )

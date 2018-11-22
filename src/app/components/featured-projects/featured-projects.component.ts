@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjectsService } from 'src/app/providers/projects.service';
+import { GlobalGivingService } from 'src/app/providers/globalgiving.service';
 import { FundDetailsComponent } from './dialogs/fund-details/fund-details.component';
 import { MatDialogRef, MatDialog } from '@angular/material/dialog';
 import { WhyDonateComponent } from './dialogs/why-donate/why-donate.component';
@@ -12,14 +12,14 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./featured-projects.component.scss']
 })
 export class FeaturedProjectsComponent implements OnInit {
-
+  /** @todo - REMOVE SUMMARY FROM THE DISPLAY - TOO MUCH INFO - display stuff users actually care about (metrics) - summary could be on MoreInfo */
   featuredProjects: any;
   maxSummaryLength: number = 300;
   fundDetailDiag: MatDialogRef<FundDetailsComponent>;
   dialogMap: any;
   
   constructor(
-    private projectsService: ProjectsService,
+    private globalGivingService: GlobalGivingService,
     private dialog: MatDialog,
     public toastr: ToastrService
   ) { 
@@ -31,10 +31,15 @@ export class FeaturedProjectsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.toastr.info("You are currently viewing projects that are in need of urgent help.")
-    this.projectsService.getFeaturedProjects().subscribe((result) => {
-      this.featuredProjects = this.parseProjects(result);
-      console.log(this.featuredProjects)
+    // this.toastr.info("You are currently viewing projects that are in need of urgent help.")
+    this.globalGivingService.getFeaturedProjects().subscribe({
+      next: (result) => {
+        this.featuredProjects = this.parseProjects(result);
+        console.log(this.featuredProjects)
+      },
+      error: () => {
+        this.toastr.error("There was an error in getting data from Global Giving. Please contact the developer.")
+      }
     })
   }
 

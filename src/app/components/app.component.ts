@@ -1,7 +1,6 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component } from '@angular/core';
 import { fadeAnimation } from '../animations/router-transition';
 import { MatDialog } from '@angular/material/dialog';
-import { ToastrService } from 'ngx-toastr';
 
 @Component({
   template: `
@@ -34,7 +33,6 @@ export class AppComponent {
   }
 
   getRouterState(outlet) {
-    console.log(outlet);
     return outlet.isActivated ? outlet.activatedRoute : '';
   }
 }

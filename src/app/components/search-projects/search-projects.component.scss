@@ -1,0 +1,35 @@
+:host {
+    #searchProjectsContainer {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .sp-btn {
+        width: 100%;
+    }
+
+    .sp-header {
+        color: white;
+        padding-left: 5px;
+    }
+
+    .sp-col {
+        padding: 5px !important;
+    }
+
+    .sp-row {
+        margin: 0;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+        .sp-header {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        #searchProjectsContainer {
+            padding: 15px;
+        }
+    }
+}
