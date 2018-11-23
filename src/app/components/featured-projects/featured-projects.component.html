@@ -1,40 +1,44 @@
-<div id="featuredProjectsCarousel" class="carousel slide" data-interval='false'>
-  <ol class="carousel-indicators">
-    <li *ngFor='let project of featuredProjects; let i = index' data-target="#featuredProjectsCarousel" [attr.data-slide-to]='i' class="active"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div *ngFor='let project of featuredProjects; let i = index' class="carousel-item" [ngClass]='i == 0 ? "active": ""'>
-      <img class="d-block fp-image w-100" [src]="featuredProjects[i].image.imagelink.slice(-2)[0].url" alt="Second slide">
-      <div class="carousel-caption mb-4">
-        <h3 class='mb-3'>{{featuredProjects[i].title}}</h3>
-        <p class='fp-summary'>{{featuredProjects[i].summary}}</p>
-        <div class="progress mt-2 mb-3 fp-progress-bar" matTooltip='See funding detail' (click)='openDialog(project, "fundDetail")'>
-          <div class="text-center progress-bar progress-bar-striped progress-bar-animated" [style.width.%]='featuredProjects[i].fundedPercentage'  [ngClass]='"bg-" + featuredProjects[i].status' role="progressbar" [attr.aria-valuenow]="featuredProjects[i].funding" aria-valuemin="0" aria-valuemax="featuredProjects[i].goal">
+
+<main [@fadeAnimation]=''>
+  <div *ngIf='loading' class="loading"><i class="fas fa-spinner fa-spin mr-1"></i> Loading projects ...</div>
+  <div *ngIf='!loading' id="featuredProjectsCarousel" class="carousel slide" data-interval='false'>
+    <ol class="carousel-indicators">
+      <li *ngFor='let project of featuredProjects; let i = index' data-target="#featuredProjectsCarousel" [attr.data-slide-to]='i' class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div *ngFor='let project of featuredProjects; let i = index' class="carousel-item" [ngClass]='i == 0 ? "active": ""'>
+        <img class="d-block fp-image w-100" [src]="featuredProjects[i].image.imagelink.slice(-2)[0].url" alt="Second slide">
+        <div class="carousel-caption mb-4">
+          <h3 class='mb-3'>{{featuredProjects[i].title}}</h3>
+          <p class='fp-summary'>{{featuredProjects[i].summary}}</p>
+          <div class="progress mt-2 mb-3 fp-progress-bar" matTooltip='See funding detail' (click)='openDialog(project, "fundDetail")'>
+            <div class="text-center progress-bar progress-bar-striped progress-bar-animated" [style.width.%]='featuredProjects[i].fundedPercentage'  [ngClass]='"bg-" + featuredProjects[i].status' role="progressbar" [attr.aria-valuenow]="featuredProjects[i].funding" aria-valuemin="0" aria-valuemax="featuredProjects[i].goal">
+            </div>
           </div>
-        </div>
-        <div class="row fp-btn-container">
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <a target="_blank" [href]='project.projectLink' class="btn btn-md btn-success mb-2 fp-btn">Donate</a>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <button class="btn btn-md btn-info mb-2 fp-btn" (click)='openDialog(project,"whyDonate")'>Why?</button>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <button class="btn btn-md btn-info mb-2 fp-btn" (click)='openDialog(project, "moreInfo")'>Info</button>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <a routerLink='/search' class="btn btn-md btn-success fp-btn">Search</a>
+          <div class="row fp-btn-container">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <a target="_blank" [href]='project.projectLink' class="btn btn-md btn-success mb-2 fp-btn">Donate</a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <button class="btn btn-md btn-info mb-2 fp-btn" (click)='openDialog(project,"whyDonate")'>Why?</button>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <button class="btn btn-md btn-info mb-2 fp-btn" (click)='openDialog(project, "moreInfo")'>Info</button>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <a routerLink='/search' class="btn btn-md btn-success fp-btn">Search</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <a class="carousel-control-prev" href="#featuredProjectsCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#featuredProjectsCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-  <a class="carousel-control-prev" href="#featuredProjectsCarousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#featuredProjectsCarousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+</main>

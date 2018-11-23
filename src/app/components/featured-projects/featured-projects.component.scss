@@ -48,6 +48,15 @@
         padding-bottom:25px
     }
 
+    .loading { 
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+        color: white;
+        font-size: 30px;
+    }
+
     @media screen and (max-width: 600px) {
         .fp-summary {
             display: none;
