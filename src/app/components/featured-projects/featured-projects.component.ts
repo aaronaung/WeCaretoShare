@@ -25,7 +25,6 @@ export class FeaturedProjectsComponent implements OnInit {
     this.globalGivingService.getFeaturedProjects().subscribe({
       next: (result) => {
         this.featuredProjects = result;
-        console.log(this.featuredProjects)
       },
       error: () => {
         this.toastr.error("There was an error in getting data from Global Giving. Please contact the developer.")
