@@ -8,15 +8,18 @@ import { FeaturedProjectsComponent } from './featured-projects/featured-projects
 import { SearchProjectsComponent } from './search-projects/search-projects.component';
 import { GlobalGivingService } from '../providers/globalgiving.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { FundDetailsComponent } from './featured-projects/dialogs/fund-details/fund-details.component';
+import { FundDetailsComponent } from './dialogs/fund-details/fund-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatDialogModule } from '@angular/material/dialog';
-import { MatTooltipModule } from '@angular/material/tooltip';
-import { WhyDonateComponent } from './featured-projects/dialogs/why-donate/why-donate.component';
-import { MoreInfoComponent } from './featured-projects/dialogs/more-info/more-info.component';
+import { WhyDonateComponent } from './dialogs/why-donate/why-donate.component';
+import { MoreInfoComponent } from './dialogs/more-info/more-info.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import { ProjectsComponent } from './search-projects/projects/projects.component';
+import { MatDialogModule, MatTooltipModule, MatSelectModule, MatFormFieldModule, MatCardModule, MatButtonModule } from '@angular/material';
+import { ProjectComponent } from './search-projects/projects/project/project.component';
+import { DialogService } from '../providers/dialog.service';
+import { CopyClipBoardComponent } from './dialogs/copy-clip-board/copy-clip-board.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { ToastrModule } from 'ngx-toastr';
     FundDetailsComponent,
     WhyDonateComponent,
     MoreInfoComponent,
-    InfoComponent
+    InfoComponent,
+    ProjectsComponent,
+    ProjectComponent,
+    CopyClipBoardComponent
   ],
   imports: [
     FormsModule,
@@ -36,11 +42,16 @@ import { ToastrModule } from 'ngx-toastr';
     HttpClientModule,
     BrowserAnimationsModule,
     CommonModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot({enableHtml: true, timeOut: 2000, preventDuplicates: true}),
     MatDialogModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [
+    DialogService,
     GlobalGivingService,
     HttpClient
   ],
@@ -48,7 +59,8 @@ import { ToastrModule } from 'ngx-toastr';
     FundDetailsComponent,
     WhyDonateComponent,
     MoreInfoComponent,
-    InfoComponent
+    InfoComponent,
+    CopyClipBoardComponent
   ],
   bootstrap: [AppComponent]
 })

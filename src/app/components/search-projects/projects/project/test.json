@@ -1,0 +1,131 @@
+{
+	"id": 29928,
+	"organization": {
+		"id": 44475,
+		"bridgeId": 3992156897,
+		"name": "Red de Fundaciones de Puerto Rico, Inc.",
+		"addressLine1": "PO Box 9919",
+		"addressLine2": "",
+		"city": "San Juan",
+		"state": "",
+		"postal": "00908",
+		"iso3166CountryCode": "PR",
+		"url": "http://redfundacionespr.org",
+		"logoUrl": "https://www.globalgiving.org/pfil/organ/44475/orglogo.jpg",
+		"mission": "The purpose of the Red de Fundaciones de Puerto Rico is to enhance the ability of philanthropy and nonprofit organizations to improve the lives of vulnerable populations. \n\nSummary\nHurricanes Irma and Maria have caused widespread damage in Puerto Rico. This fund will provide recovery assistance to help residents recover and rebuild. All donations to this fund will exclusively support recovery efforts from these storms.\nChallenge\nRecord-breaking wind and rain have destroyed homes, and left millions without electricity or water. The most affected populations are the poor communities. Nonprofit organizations have stepped in to address needs that government alone cannot. Local nonprofit partners are have asked us to help fund their recovery efforts on the ground.\nSolution\nAll donations to this fund will support recovery efforts for Hurricanes Irma and Maria. Initially, the fund will help nonprofit organizations meet survivors' immediate needs for food, fuel, clean water, hygiene products, and shelter. Once initial relief work is complete, this fund will transition to support longer-term recovery efforts run by local, vetted organizations in the Puerto Rican archipielago (includes the islands of Culebra and Vieques, as well as Puerto Rico).\nLong-Term Impact\nWe believe that organizations that are deeply-rooted in local communities are in the best position to provide long-term support for survivors of natural disasters like Hurricanes Irma and Maria. By funding the relief efforts of local organizations, donations to this fund have the potential to build stronger response capacity so that these organizations are better equipped to face future challenges.",
+		"totalProjects": 1,
+		"activeProjects": 1,
+		"themes": {
+			"theme": [{
+				"id": "children",
+				"name": "Children"
+			}, {
+				"id": "democ",
+				"name": "Democracy and Governance"
+			}, {
+				"id": "disaster",
+				"name": "Disaster Recovery"
+			}, {
+				"id": "ecdev",
+				"name": "Economic Development"
+			}, {
+				"id": "edu",
+				"name": "Education"
+			}, {
+				"id": "env",
+				"name": "Environment"
+			}, {
+				"id": "finance",
+				"name": "Microfinance"
+			}, {
+				"id": "gender",
+				"name": "Women and Girls"
+			}, {
+				"id": "health",
+				"name": "Health"
+			}, {
+				"id": "human",
+				"name": "Humanitarian Assistance"
+			}, {
+				"id": "art",
+				"name": "Arts and Culture"
+			}]
+		},
+		"countries": {
+			"country": [{
+				"name": "Puerto Rico",
+				"iso3166CountryCode": "PR"
+			}]
+		},
+		"country": "Puerto Rico"
+	},
+	"active": true,
+	"title": "Puerto Rico emergency relief / long-term recovery",
+	"summary": "FORWARD/ADELANTE Puerto Rico, a fund created by the network of Puerto Rican foundations, collected and quickly distributed funds to vetted local grassroots organizations that provided direct assistance to communities affected by Hurricanes Maria and Irma. Now, longer term support will strengthen their response capacity, promote transparency in government,  equitable distribution of disaster recovery funds, and generate data to promote access to housing, jobs, and resilient communities.",
+	"contactName": "Janice Petrovich",
+	"contactAddress": "Edificio Fundacion Banco Popular",
+	"contactAddress2": "167 Avenida Ponce de Leon, Esq. Quisqueya",
+	"contactCity": "San Juan",
+	"contactState": "",
+	"contactPostal": "00917",
+	"contactCountry": "Puerto Rico",
+	"contactUrl": "http://redfundacionespr.org",
+	"projectLink": "https://www.globalgiving.org/projects/fund-for-puerto-rico-grassroots-relief-and-recovery/",
+	"progressReportLink": "https://www.globalgiving.org/projects/fund-for-puerto-rico-grassroots-relief-and-recovery/updates/",
+	"themeName": "Disaster Recovery",
+	"country": "Puerto Rico",
+	"iso3166CountryCode": "PR",
+	"region": "South/Central America and the Caribbean",
+	"goal": 250000,
+	"funding": 135596.13,
+	"remaining": 114403.87,
+	"numberOfDonations": 1003,
+	"status": "active",
+	"need": "The 3.5 Million residents of Puerto Rico are still suffering the hurricanes' devastation. An economic recession has led to cuts in public services and jobs. Hundreds of thousands still do not have a safe home. Disaster recovery funds help rebuild homes, but people must have title to their land. Many lost their papers or built homes informally on family land. Without land titles the poor lose their most important asset. And nonprofits, essential providers of immediate relief, need strengthening.",
+	"longTermImpact": "The FORWARD Fund has identified priorities to create long term and sustainable recovery, local jobs, stem migration and increase philanthropic investments: Promote social justice and transparency in the distribution of public resources, particularly disaster recovery funds; Facilitate data analysis, and informed public dialogue and debate on the impacts of new policies, particularly for vulnerable populations; Advance the resilience and sustainability of the non-profit sector.",
+	"activities": "Quickly following Hurricanes irma and Maria, the FORWARD Puerto Rico Fund supported local grassroots groups that provided immediate assistance, even as government response was inadequate. Most households now have water and electricity. A long recovery is ahead with government funds beginning to arrive for housing repair and rebuilding and job creation. Funds need to favor those with fewest resources. Government transparency and accountability, fuelled by data analysis, will ensure good policies.",
+	"imageLink": "https://www.globalgiving.org/pfil/29928/pict.jpg",
+	"imageGallerySize": 30,
+	"longitude": -66.4453125,
+	"latitude": 16.6993408203125,
+	"approvedDate": "2017-10-09T15:09:16-04:00",
+	"donationOptions": {
+		"donationOption": [{
+			"amount": 10,
+			"description": "Will provide stamps for two affidavits needed to establish land title"
+		}, {
+			"amount": 50,
+			"description": "Will cover one land title study to establish ownership"
+		}, {
+			"amount": 250,
+			"description": "One person will obtain their land title to qualify for federal disaster aid."
+		}]
+	},
+	"image": {
+		"title": "Puerto Rico emergency relief / long-term recovery",
+		"id": 0,
+		"imagelink": [{
+			"url": "https://www.globalgiving.org/pfil/29928/pict_grid1.jpg",
+			"size": "small"
+		}, {
+			"url": "https://www.globalgiving.org/pfil/29928/pict_thumbnail.jpg",
+			"size": "thumbnail"
+		}, {
+			"url": "https://www.globalgiving.org/pfil/29928/pict_med.jpg",
+			"size": "medium"
+		}, {
+			"url": "https://www.globalgiving.org/pfil/29928/pict_grid7.jpg",
+			"size": "large"
+		}, {
+			"url": "https://www.globalgiving.org/pfil/29928/pict_large.jpg",
+			"size": "extraLarge"
+		}, {
+			"url": "https://www.globalgiving.org/pfil/29928/pict_original.jpg",
+			"size": "original"
+		}]
+	},
+	"type": "project",
+	"imgHQ": "https://www.globalgiving.org/pfil/29928/pict_large.jpg",
+	"fundedPercentage": 54.238452,
+	"barStatus": "bg-warning"
+}

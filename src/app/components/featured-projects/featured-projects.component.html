@@ -9,7 +9,7 @@
         <h3 class='mb-3'>{{featuredProjects[i].title}}</h3>
         <p class='fp-summary'>{{featuredProjects[i].summary}}</p>
         <div class="progress mt-2 mb-3 fp-progress-bar" matTooltip='See funding detail' (click)='openDialog(project, "fundDetail")'>
-          <div class="text-center progress-bar progress-bar-striped progress-bar-animated" [style.width.%]='featuredProjects[i].fundedPercentage'  [ngClass]='featuredProjects[i].barStatus' role="progressbar" [attr.aria-valuenow]="featuredProjects[i].funding" aria-valuemin="0" aria-valuemax="featuredProjects[i].goal">
+          <div class="text-center progress-bar progress-bar-striped progress-bar-animated" [style.width.%]='featuredProjects[i].fundedPercentage'  [ngClass]='"bg-" + featuredProjects[i].status' role="progressbar" [attr.aria-valuenow]="featuredProjects[i].funding" aria-valuemin="0" aria-valuemax="featuredProjects[i].goal">
           </div>
         </div>
         <div class="row fp-btn-container">

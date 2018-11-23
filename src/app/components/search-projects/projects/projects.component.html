@@ -1,0 +1,9 @@
+<h3 *ngIf='searchResults.numberFound == 0' class='noresults'><i class="fas fa-exclamation-circle fa-sm mr-2"></i><i>No results</i></h3>
+
+<div [@fadeAnimation]='' *ngIf='searchResults.numberFound > 0' class="row projects">
+    <div *ngFor='let p of searchResults.projects' class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <app-project [project]='p'></app-project>
+    </div>   
+</div>
+
+

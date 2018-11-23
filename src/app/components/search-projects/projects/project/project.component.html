@@ -1,0 +1,28 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <a target='_blank' matTooltip="Visit us" [href]='project.organization.url'>
+      <div mat-card-avatar class="header-image" [ngStyle]="{'background-image': 'url(' + project.organization.logoUrl || '' + ')', 'background-size': 'cover'}"></div>
+    </a>
+    <mat-card-title>{{project.title}}</mat-card-title>
+    <mat-card-subtitle><i>{{project.organization.name}}</i></mat-card-subtitle>
+  </mat-card-header>
+  <a target='_blank' matTooltip="I care to share" [href]='project.projectLink'><img mat-card-image class='mt-2' [src]='project.imgHQ' alt="WE CARE TO SHARE"></a>
+  <mat-card-content class='p-summary'>
+    <p>
+      {{project.need || project.longTermImpact || project.summary || "No summary provided"}}
+    </p>
+  </mat-card-content>
+  <mat-card-content class='p-funding'>
+    <div class="progress mt-2 mb-3 p-progress-bar" matTooltip='See funding detail' (click)= "openDialog(project, 'fundDetail')">
+      <div class="text-center progress-bar progress-bar-striped progress-bar-animated" [style.width.%]='project.fundedPercentage'  [ngClass]='"bg-"+ project.status' role="progressbar" [attr.aria-valuenow]="project.funding" aria-valuemin="0" aria-valuemax="project.goal">
+      </div>
+    </div>
+
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button matTooltip='You are beautiful' target='_blank' [href]='project.projectLink'>Donate</a>
+    <a mat-button matTooltip='You are beautiful' (click)='openDialog(project,"moreInfo")'>Contact Organization</a>
+    <a mat-button matTooltip='You are beautiful' (click)='openDialog(project, "copyClipBoard")'>Share</a>
+  </mat-card-actions>
+</mat-card>
+

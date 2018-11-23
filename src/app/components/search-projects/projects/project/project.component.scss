@@ -1,0 +1,23 @@
+:host {
+
+   .mat-card { 
+      margin-bottom: 20px; 
+      height: 650px !important;
+      overflow: auto;
+   }
+
+   .mat-card-image {
+      height: 250px;
+      object-fit: cover;
+   }
+
+   .p-summary {
+      height: 150px;
+      overflow: auto;
+   }
+
+   .p-progress-bar {
+      cursor: pointer;
+      height: 25px;
+   }
+}

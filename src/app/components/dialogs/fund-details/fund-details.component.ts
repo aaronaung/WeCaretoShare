@@ -11,8 +11,4 @@ export class FundDetailsComponent {
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any
   ) { }
-
-  numWithCommas(num) {
-    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  }
 }
