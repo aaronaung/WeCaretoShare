@@ -11,4 +11,10 @@
     .projects {
         padding: 5px;
     }
+
+    @media screen and (max-width: 600px) {
+        .noresults {
+            top: 70%;
+        }
+    }
 }

@@ -24,4 +24,9 @@
             float: right !important;
         }
     }
+    @media screen and (max-width: 600px) {
+        .quote {
+            font-size: 25px !important;
+        }
+    }
 }
